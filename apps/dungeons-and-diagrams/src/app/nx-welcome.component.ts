@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'pinto4903-nx-welcome',
+  selector: 'dnd-nx-welcome',
   standalone: true,
   imports: [CommonModule],
   template: `

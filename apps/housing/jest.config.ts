@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'grid',
+  displayName: 'housing',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/grid',
+  coverageDirectory: '../../coverage/apps/housing',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
