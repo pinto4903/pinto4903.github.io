@@ -1,0 +1,87 @@
+div.fretboard-container {
+    display: block;
+    height: 220px;
+    width: 80%;
+    min-width: 640px;
+}
+
+div.top {
+    display: flex;
+    height: 90%;
+}
+
+div.bottom {
+    display: flex;
+    height: 10%;
+    margin-left: 2%;
+}
+
+div.fret-number {
+    flex: 1 1 0px;
+    text-align: center;
+}
+
+div.string-labels {
+    display: flex;
+    flex-direction: column;
+    width: 2%;
+}
+
+div.string-tone{
+    flex: 1 1 0px;
+    text-align: center;
+    margin-right: 20%;
+}
+
+div.top-element{
+    margin-top: 50%;
+}
+
+div.bottom-element{
+    margin-bottom: 50%;
+}
+
+svg.fretboard {
+    height: 200px;
+    width: 100%;
+}
+
+rect.fretboardbg {
+    height: 100%;
+    width: 100%;
+    fill: black;
+}
+
+circle.fretboardmarker {
+    opacity: 50%;
+    fill: white;
+}
+
+line.fret {
+    height: 100%;
+    stroke-width: 4px;
+    stroke: white;
+}
+
+line.string {
+    stroke-width: 3px;
+}
+
+line.string.nylon {
+    stroke: gainsboro;
+}
+
+line.string.steel {
+    stroke: slategray;
+}
+
+rect.rectbutton {
+    height: 14.29%;
+    width: 4%;
+    rx: 5px;
+    fill: transparent;
+}
+
+.rectbutton:hover {
+    fill: color-mix(in srgb, white 35%, transparent);
+  }
