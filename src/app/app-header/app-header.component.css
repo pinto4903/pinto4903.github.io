@@ -6,7 +6,7 @@
     width: 100%;
     height: 50px;
     text-align: center; 
-    background: black;
+    background: white;
     padding: 0px; 
     display: flex;
     justify-content: center;
@@ -31,24 +31,15 @@
 .navigation a { 
     font-size: 20px;
     font-weight: 500;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 30px;
     text-decoration: none;
-    color: darkgray; 
+    color: var(--rich-black); 
 } 
 
 .navigation a:hover {
-    background: color-mix(in srgb, white 35%, transparent);
+    background: color-mix(in srgb, gray 35%, transparent);
   }
-
-.footer { 
-    position: fixed; 
-    bottom: 0; 
-    width: 100%; 
-    background-color: lightgray; 
-    padding: 10px; 
-    text-align: center; 
-} 
 
 .content { 
     margin-bottom: 100px; 
@@ -56,4 +47,14 @@
 
 .hr {
     width: 50%;
+}
+
+.header::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 2px; 
+    background-color: lightgray;  
 }

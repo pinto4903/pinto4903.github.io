@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import * as Tone from 'tone';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
+import { NoteService } from '../note.service';
+import { FretService, GuitarFret } from '../fret.service';
 
 @Component({
   selector: 'app-fretboard',
@@ -10,37 +11,70 @@ import * as Tone from 'tone';
 })
 export class FretboardComponent {
   @Output() fretClickEvent = new EventEmitter<[number, number]>();
-  sampler = new Tone.Sampler({
-    urls: {
-      E2: 'low_e.mp3',
-      A2: 'A.mp3',
-      D3: 'D.mp3',
-      G3: 'G.mp3',
-      B3: 'B.mp3',
-      E4: 'high_e.mp3',
-    },
-    baseUrl: 'assets/sounds/',
-  }).toDestination();
+  shiftPressed: boolean = false;
+  selectedElements: HTMLElement[] = [];
+
+  constructor(private noteService: NoteService, private fretService: FretService) {}
+
+  @HostListener('window:keydown.shift', ['$event']) handleKeyDown(event: KeyboardEvent) {
+    this.shiftPressed = true;
+  }
+
+  @HostListener('window:keyup.shift', ['$event']) handleKeyUp(event: KeyboardEvent) {
+    this.shiftPressed = false;
+    for (let i in this.selectedElements) {
+      this.selectedElements[i].style.fill = '';
+    }
+    let notes: string[] = this.selectedElements.map((elem) => {
+      let numbers = FretboardComponent.idToFret(elem.id);
+      return FretboardComponent.fretToNote(numbers[0], numbers[1]);
+    });
+    this.selectedElements = [];
+    console.log(notes);
+    this.noteService.setChord(notes); // TODO fretService.setChord
+    // TODO add a chord indicator light :)
+    // TODO study css it sucks
+  }
 
   onClick(e: Event) {
-    console.log(e);
-    const targetElement = e.target as Element;
-    const id = targetElement.id;
-    let regex: RegExp = /\d+/g;
-    let matches: string[] = id.match(regex)!;
-    let numbers: number[] = matches.map((match) => parseInt(match, 10));
-    this.fretClickEvent.emit([numbers[0], numbers[1]]);
-
-    if ((e as KeyboardEvent).ctrlKey) {
-      this.sampler.triggerAttackRelease(this.fretToNote(numbers[0], numbers[1]), '2n');
+    if (this.shiftPressed) {
+      const htmele = e.target as HTMLElement;
+      if (this.selectedElements.includes(htmele)) {
+        let i = this.selectedElements.indexOf(htmele);
+        this.selectedElements.splice(i, 1);
+        htmele.style.fill = '';
+      } else {
+        const id = htmele.id;
+        let str: number = FretboardComponent.idToFret(id)[0];
+        let i = this.selectedElements.findIndex(
+          (elem) => FretboardComponent.idToFret(elem.id)[0] == str
+        );
+        if (i > -1) {
+          this.selectedElements[i].style.fill = '';
+          this.selectedElements.splice(i, 1);
+        }
+        htmele.style.fill = 'color-mix(in srgb, var(--c2) 70%, transparent)';
+        this.selectedElements.push(htmele);
+      }
+    } else {
+      const targetElement = e.target as Element;
+      const id = targetElement.id;
+      let numbers: number[] = FretboardComponent.idToFret(id);
+      this.noteService.setNote(FretboardComponent.fretToNote(numbers[0], numbers[1]));
+      this.fretService.setNote({ str: numbers[0], fret: numbers[1] });
     }
   }
 
-  fretToNote(str: number, fret: number): string {
+  static idToFret(id: string) {
+    let regex: RegExp = /\d+/g;
+    let matches: string[] = id.match(regex)!;
+    return matches.map((match) => parseInt(match, 10));
+  }
+
+  static fretToNote(str: number, fret: number): string {
     const key = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
 
     const num = (6 - str) * 5 + fret - (str < 3 ? 1 : 0);
-    console.log(num);
     const note = `${key[(num + 7) % 12]}${Math.ceil(2 + Math.max(num - 7, 0) / 12)}`;
     console.log(note);
     return note;
