@@ -33,12 +33,14 @@ export class PlayerComponent {
     });
   }
 
-  @HostListener('window:keydown.control', ['$event']) handleKeyDown(event: KeyboardEvent) {
+  @HostListener('window:keydown.control', ['$event'])
+  handleCtrlDown(event: KeyboardEvent) {
     if (!this.ctrlPressed) this.isPlaying = !this.isPlaying;
     this.ctrlPressed = true;
   }
 
-  @HostListener('window:keyup.control', ['$event']) handleKeyUp(event: KeyboardEvent) {
+  @HostListener('window:keyup.control', ['$event'])
+  handleCtrlUp(event: KeyboardEvent) {
     this.isPlaying = !this.isPlaying;
     this.ctrlPressed = false;
   }

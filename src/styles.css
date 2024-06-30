@@ -87,6 +87,10 @@ input:checked + .slider:before {
 } 
 
 span.kbkey {
-  outline: 1px black;
+  outline: 1px gray solid;
+  background-color: lightgray;
   font-family: 'Courier New', Courier, monospace;
+  box-shadow: 1px 1px 0px 0px lightgray, 2px 2px 0px 0px lightgray;
+  margin-left: 10px;
+  border-radius: 1px;
 }

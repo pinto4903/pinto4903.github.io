@@ -16,11 +16,13 @@ export class FretboardComponent {
 
   constructor(private noteService: NoteService, private fretService: FretService) {}
 
-  @HostListener('window:keydown.shift', ['$event']) handleKeyDown(event: KeyboardEvent) {
+  @HostListener('window:keydown.shift', ['$event'])
+  handleShiftDown(event: KeyboardEvent) {
     this.shiftPressed = true;
   }
 
-  @HostListener('window:keyup.shift', ['$event']) handleKeyUp(event: KeyboardEvent) {
+  @HostListener('window:keyup.shift', ['$event'])
+  handleShiftUp(event: KeyboardEvent) {
     this.shiftPressed = false;
     for (let i in this.selectedElements) {
       this.selectedElements[i].style.fill = '';
@@ -29,9 +31,13 @@ export class FretboardComponent {
       let numbers = FretboardComponent.idToFret(elem.id);
       return FretboardComponent.fretToNote(numbers[0], numbers[1]);
     });
+    this.noteService.setChord(notes);
+    let frets: GuitarFret[] = this.selectedElements.map((elem) => {
+      let numbers = FretboardComponent.idToFret(elem.id);
+      return { str: numbers[0], fret: numbers[1] };
+    });
+    this.fretService.setChord(frets);
     this.selectedElements = [];
-    console.log(notes);
-    this.noteService.setChord(notes); // TODO fretService.setChord
     // TODO add a chord indicator light :)
     // TODO study css it sucks
   }

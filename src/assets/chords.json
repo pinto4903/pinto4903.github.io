@@ -1,0 +1,995 @@
+{
+  "chords": [
+    {
+      "chord": "Cmajor",
+      "positions": [
+        { "frets": [-1, 3, 2, 0, 1, 0], "barres": [] },
+        { "frets": [-1, 1, 3, 3, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 4], "barres": [1] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Cminor",
+      "positions": [
+        { "frets": [-1, 3, 1, 0, 1, 3], "barres": [] },
+        { "frets": [1, 1, 3, 3, 2, 1], "barres": [1] },
+        { "frets": [4, 2, 1, 1, -1, -1], "barres": [1] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Cdim",
+      "positions": [
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Cdim7",
+      "positions": [
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] },
+        { "frets": [-1, 3, 4, 2, 4, 2], "barres": [2] },
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Caug",
+      "positions": [
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [-1, 1, 4, 3, 3, -1], "barres": [] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [-1, -1, 3, 2, 2, 1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "C7",
+      "positions": [
+        { "frets": [-1, 3, 2, 3, 1, 0], "barres": [] },
+        { "frets": [-1, 1, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 2], "barres": [1] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Cmaj7",
+      "positions": [
+        { "frets": [3, 3, 2, 0, 0, 0], "barres": [] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 3], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 3, 3], "barres": [3] }
+      ]
+    },
+    {
+      "chord": "Cm7",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [-1, 3, 1, 3, 4, -1], "barres": [] },
+        { "frets": [1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Cm7b5",
+      "positions": [
+        { "frets": [-1, 3, 4, 3, 4, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 1, 3], "barres": [1] },
+        { "frets": [1, 2, 3, 1, 4, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] }
+      ]
+    },
+    {
+      "chord": "C#major",
+      "positions": [
+        { "frets": [-1, 4, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [1, 1, 3, 3, 3, 1], "barres": [1] },
+        { "frets": [4, 3, 1, 1, 1, 4], "barres": [1] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "C#minor",
+      "positions": [
+        { "frets": [-1, 4, 2, 1, 2, -1], "barres": [] },
+        { "frets": [1, 1, 3, 3, 2, 1], "barres": [1] },
+        { "frets": [4, 2, 1, 1, -1, 4], "barres": [1] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "C#dim",
+      "positions": [
+        { "frets": [-1, 4, 2, -1, 2, 3], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "C#dim7",
+      "positions": [
+        { "frets": [-1, -1, 2, 3, 2, 3], "barres": [] },
+        { "frets": [-1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "C#aug",
+      "positions": [
+        { "frets": [-1, 4, 4, 4, 2, 2], "barres": [2] },
+        { "frets": [1, 1, 3, 1, 4, 1], "barres": [1] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [1, -1, 3, 2, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "C#7",
+      "positions": [
+        { "frets": [-1, 4, 3, 4, 2, -1], "barres": [] },
+        { "frets": [-1, 1, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [4, 3, 1, 1, 1, 2], "barres": [1] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "C#maj7",
+      "positions": [
+        { "frets": [-1, 4, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, -1, 1, 1, 3], "barres": [1] },
+        { "frets": [1, -1, 2, 2, 1, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "C#m7",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [-1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 2, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "C#m7b5",
+      "positions": [
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 1, 3], "barres": [1] },
+        { "frets": [2, -1, 2, 2, 1, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] }
+      ]
+    },
+    {
+      "chord": "Dmajor",
+      "positions": [
+        { "frets": [-1, -1, 0, 2, 3, 2], "barres": [] },
+        { "frets": [-1, 4, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, 1, 3, 3, 3, 1], "barres": [1] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Dminor",
+      "positions": [
+        { "frets": [-1, -1, 0, 2, 3, 1], "barres": [] },
+        { "frets": [1, 1, 3, 3, 2, 1], "barres": [1] },
+        { "frets": [-1, 3, 2, 2, 1, -1], "barres": [] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ddim",
+      "positions": [
+        { "frets": [-1, -1, 0, 1, -1, 1], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Ddim7",
+      "positions": [
+        { "frets": [-1, -1, 0, 1, 0, 1], "barres": [] },
+        { "frets": [-1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, 2, 0, 4, 3, 1], "barres": [] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Daug",
+      "positions": [
+        { "frets": [-1, -1, 0, 3, 3, 2], "barres": [] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [1, -1, 3, 2, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "D7",
+      "positions": [
+        { "frets": [-1, -1, 0, 2, 1, 2], "barres": [] },
+        { "frets": [-1, 3, 2, 3, 1, -1], "barres": [] },
+        { "frets": [1, 1, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Dmaj7",
+      "positions": [
+        { "frets": [-1, -1, 0, 2, 2, 2], "barres": [2] },
+        { "frets": [-1, 4, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 3], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Dm7",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [-1, -1, 0, 2, 1, 1], "barres": [] },
+        { "frets": [-1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Dm7b5",
+      "positions": [
+        { "frets": [-1, -1, 0, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, 3, 1, 3, 1, 2], "barres": [1] },
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] },
+        { "frets": [-1, 1, 0, 3, 2, 1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Ebmajor",
+      "positions": [
+        { "frets": [-1, -1, 1, 3, 4, 3], "barres": [] },
+        { "frets": [-1, 4, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, 1, 3, 3, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 4], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ebminor",
+      "positions": [
+        { "frets": [-1, -1, 1, 3, 4, 2], "barres": [] },
+        { "frets": [-1, -1, 4, 3, 4, 2], "barres": [] },
+        { "frets": [1, 1, 3, 3, 2, 1], "barres": [1] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ebdim",
+      "positions": [
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Ebdim7",
+      "positions": [
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] },
+        { "frets": [-1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] },
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ebaug",
+      "positions": [
+        { "frets": [-1, -1, 3, 2, 2, 1], "barres": [] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [1, -1, 3, 2, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Eb7",
+      "positions": [
+        { "frets": [-1, -1, 1, 3, 2, 3], "barres": [] },
+        { "frets": [-1, 1, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 2], "barres": [1] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ebmaj7",
+      "positions": [
+        { "frets": [-1, 1, 1, 3, 3, 3], "barres": [1, 3] },
+        { "frets": [-1, 4, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 3], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ebm7",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 3, 2, 2], "barres": [] },
+        { "frets": [1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ebm7b5",
+      "positions": [
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 1, 3], "barres": [1] },
+        { "frets": [2, -1, 2, 2, 1, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Emajor",
+      "positions": [
+        { "frets": [0, 2, 2, 1, 0, 0], "barres": [] },
+        { "frets": [-1, -1, 1, 3, 4, 3], "barres": [] },
+        { "frets": [-1, 4, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, 1, 3, 3, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Eminor",
+      "positions": [
+        { "frets": [0, 2, 2, 0, 0, 0], "barres": [] },
+        { "frets": [0, 1, 1, 3, 4, 2], "barres": [1] },
+        { "frets": [-1, 1, 3, 3, 2, 1], "barres": [1] },
+        { "frets": [4, 2, 1, 1, -1, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Edim",
+      "positions": [
+        { "frets": [-1, -1, 2, 3, -1, 3], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Edim7",
+      "positions": [
+        { "frets": [0, 1, 2, 0, 2, 0], "barres": [] },
+        { "frets": [-1, -1, 2, 3, 2, 3], "barres": [] },
+        { "frets": [-1, 2, 3, 1, 3, -1], "barres": [] },
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Eaug",
+      "positions": [
+        { "frets": [0, 3, 2, 1, 1, 0], "barres": [] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [-1, 1, 4, 3, 3, -1], "barres": [] },
+        { "frets": [4, 3, 2, 1, 1, 0], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "E7",
+      "positions": [
+        { "frets": [0, 2, 0, 1, 0, 0], "barres": [] },
+        { "frets": [-1, 3, 2, 3, 1, -1], "barres": [] },
+        { "frets": [1, 1, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 2], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Emaj7",
+      "positions": [
+        { "frets": [0, 2, 1, 1, 0, 0], "barres": [] },
+        { "frets": [-1, -1, 2, 4, 4, 4], "barres": [4] },
+        { "frets": [-1, 4, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Em7",
+      "positions": [
+        { "frets": [0, -1, 0, 0, 0, -1], "barres": [] },
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [0, 2, 2, 0, 3, 0], "barres": [] },
+        { "frets": [0, 2, 0, 0, 0, 0], "barres": [] },
+        { "frets": [0, 2, 2, 4, 3, 3], "barres": [2] },
+        { "frets": [1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Em7b5",
+      "positions": [
+        { "frets": [0, 1, 2, 3, 3, 3], "barres": [3] },
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 1, 3], "barres": [1] },
+        { "frets": [2, -1, 2, 2, 1, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Fmajor",
+      "positions": [
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 3, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 4, 3], "barres": [] },
+        { "frets": [-1, 4, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, 1, 3, 3, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Fminor",
+      "positions": [
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 4, 2], "barres": [] },
+        { "frets": [-1, 1, 3, 3, 2, 1], "barres": [1] },
+        { "frets": [4, 2, 1, 1, -1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Fdim",
+      "positions": [
+        { "frets": [-1, -1, 3, 4, -1, 4], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Fdim7",
+      "positions": [
+        { "frets": [1, -1, 0, 1, 0, 1], "barres": [] },
+        { "frets": [-1, -1, 3, 4, 3, 4], "barres": [3] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Faug",
+      "positions": [
+        { "frets": [-1, -1, 3, 2, 2, 1], "barres": [] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [-1, 1, -1, 3, 3, 2], "barres": [] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "F7",
+      "positions": [
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 3], "barres": [1] },
+        { "frets": [1, 1, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 2], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Fmaj7",
+      "positions": [
+        { "frets": [-1, -1, 3, 2, 1, 0], "barres": [] },
+        { "frets": [1, 3, 2, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 3, 3], "barres": [1] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Fm7",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 2, 2], "barres": [] },
+        { "frets": [1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Fm7b5",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 0, -1], "barres": [] },
+        { "frets": [-1, -1, 3, 4, 4, 4], "barres": [4] },
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] },
+        { "frets": [3, 1, 3, 3, 0, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "F#major",
+      "positions": [
+        { "frets": [2, 4, 4, 3, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 1, 3, 4, 3], "barres": [1] },
+        { "frets": [1, 4, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [1, 1, 3, 3, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "F#minor",
+      "positions": [
+        { "frets": [2, 4, 4, 2, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 1, 3, 4, 2], "barres": [1] },
+        { "frets": [-1, -1, 3, 2, 3, 1], "barres": [] },
+        { "frets": [1, 1, 3, 3, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "F#dim",
+      "positions": [
+        { "frets": [2, 0, -1, 2, 1, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "F#dim7",
+      "positions": [
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [1] },
+        { "frets": [2, 3, 4, 2, 4, 2], "barres": [2] },
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "F#aug",
+      "positions": [
+        { "frets": [-1, -1, 4, 3, 3, 2], "barres": [] },
+        { "frets": [-1, -1, 4, 3, 3, -1], "barres": [3] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "F#7",
+      "positions": [
+        { "frets": [2, 4, 2, 3, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 1, 3, 2, 3], "barres": [1] },
+        { "frets": [-1, 3, 2, 3, 1, -1], "barres": [] },
+        { "frets": [1, 1, 3, 1, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "F#maj7",
+      "positions": [
+        { "frets": [2, 4, 3, 3, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 1, 3, 3, 3], "barres": [1] },
+        { "frets": [-1, 4, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "F#m7",
+      "positions": [
+        { "frets": [2, -1, 2, 2, 2, -1], "barres": [] },
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [2, 4, 2, 2, 2, 2], "barres": [2] },
+        { "frets": [-1, -1, 1, 3, 2, 2], "barres": [] },
+        { "frets": [1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] }
+      ]
+    },
+    {
+      "chord": "F#m7b5",
+      "positions": [
+        { "frets": [2, 0, 2, 2, 1, 0], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 1, 3], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Gmajor",
+      "positions": [
+        { "frets": [3, 2, 0, 0, 0, 3], "barres": [] },
+        { "frets": [3, 2, 0, 0, 0, 3], "barres": [] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 4, 3], "barres": [] },
+        { "frets": [1, 4, 3, 1, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Gminor",
+      "positions": [
+        { "frets": [3, 1, 0, 0, 3, 3], "barres": [] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 4, 2], "barres": [] },
+        { "frets": [1, 1, 3, 3, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Gdim",
+      "positions": [
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Gdim7",
+      "positions": [
+        { "frets": [3, 1, -1, 3, 2, 0], "barres": [] },
+        { "frets": [3, -1, 2, 3, 2, 0], "barres": [] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Gaug",
+      "positions": [
+        { "frets": [3, 2, 1, 0, 0, -1], "barres": [] },
+        { "frets": [1, -1, 3, 2, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "G7",
+      "positions": [
+        { "frets": [3, 2, 0, 0, 0, 1], "barres": [] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 3], "barres": [1] },
+        { "frets": [1, 1, 3, 1, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Gmaj7",
+      "positions": [
+        { "frets": [3, 2, 0, 0, 0, 2], "barres": [] },
+        { "frets": [1, 3, 2, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 3, 3], "barres": [1, 3] },
+        { "frets": [-1, 1, 3, 2, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Gm7",
+      "positions": [
+        { "frets": [3, -1, 3, 3, 3, -1], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 2], "barres": [1] },
+        { "frets": [-1, 3, 1, 3, 1, 3], "barres": [1] },
+        { "frets": [1, 1, 3, 1, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Gm7b5",
+      "positions": [
+        { "frets": [3, -1, -1, 3, 2, 1], "barres": [] },
+        { "frets": [3, -1, 3, 3, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Abmajor",
+      "positions": [
+        { "frets": [4, 3, 1, 1, 1, -1], "barres": [1] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 4, 3], "barres": [1] },
+        { "frets": [1, 4, 3, 1, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Abminor",
+      "positions": [
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 4, 2], "barres": [] },
+        { "frets": [-1, -1, 3, 2, 3, 1], "barres": [] },
+        { "frets": [1, 1, 3, 3, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Abdim",
+      "positions": [
+        { "frets": [4, 2, -1, 4, 3, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] },
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Abdim7",
+      "positions": [
+        { "frets": [-1, -1, 0, 1, 0, 1], "barres": [] },
+        { "frets": [4, -1, 3, 4, 3, 4], "barres": [3] },
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Abaug",
+      "positions": [
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [1, -1, 3, 2, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Ab7",
+      "positions": [
+        { "frets": [-1, -1, 1, 1, 1, 2], "barres": [1] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 3], "barres": [1] },
+        { "frets": [1, 1, 3, 1, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Abmaj7",
+      "positions": [
+        { "frets": [1, 3, 2, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 3, 3], "barres": [1] },
+        { "frets": [-1, 3, 2, 4, 1, -1], "barres": [] },
+        { "frets": [1, 1, 3, 2, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Abm7",
+      "positions": [
+        { "frets": [4, -1, 4, 4, 4, -1], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 2], "barres": [1] },
+        { "frets": [-1, 3, 1, 3, 1, -1], "barres": [1] },
+        { "frets": [1, 1, 3, 1, 2, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Abm7b5",
+      "positions": [
+        { "frets": [-1, -1, 0, 1, 0, 2], "barres": [] },
+        { "frets": [4, -1, 4, 4, 3, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] },
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Amajor",
+      "positions": [
+        { "frets": [-1, 0, 2, 2, 2, 0], "barres": [] },
+        { "frets": [-1, 0, 1, 1, 1, 4], "barres": [1] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 0, 1, 3, 4, 3], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Aminor",
+      "positions": [
+        { "frets": [-1, 0, 2, 2, 1, 0], "barres": [] },
+        { "frets": [-1, 0, 1, 4, 4, 4], "barres": [4] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, 0, 1, 3, 4, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Adim",
+      "positions": [
+        { "frets": [-1, 0, 1, 2, 1, -1], "barres": [] },
+        { "frets": [3, 1, -1, 2, 1, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Adim7",
+      "positions": [
+        { "frets": [-1, 0, 1, 2, 1, 2], "barres": [] },
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [1] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, 0, 1, 2, 1, 2], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Aaug",
+      "positions": [
+        { "frets": [-1, 0, 3, 2, 2, 1], "barres": [] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [1, -1, 3, 2, 2, 1], "barres": [1] },
+        { "frets": [-1, 3, 2, 1, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "A7",
+      "positions": [
+        { "frets": [-1, 0, 2, 0, 2, 0], "barres": [] },
+        { "frets": [-1, 0, 2, 2, 2, 3], "barres": [2] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 0, 1, 3, 2, 3], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Amaj7",
+      "positions": [
+        { "frets": [-1, 0, 2, 1, 2, 0], "barres": [] },
+        { "frets": [-1, 0, 2, 2, 2, 4], "barres": [2] },
+        { "frets": [1, 3, 2, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 0, 1, 3, 3, 3], "barres": [3] }
+      ]
+    },
+    {
+      "chord": "Am7",
+      "positions": [
+        { "frets": [-1, 0, 2, 0, 1, 0], "barres": [] },
+        { "frets": [-1, 0, 2, 2, 1, 3], "barres": [] },
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [-1, 0, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 2], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Am7b5",
+      "positions": [
+        { "frets": [-1, 0, 1, 0, 1, -1], "barres": [] },
+        { "frets": [2, -1, 2, 2, 1, -1], "barres": [] },
+        { "frets": [1, 2, 3, 1, 4, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] }
+      ]
+    },
+    {
+      "chord": "Bbmajor",
+      "positions": [
+        { "frets": [-1, 1, 3, 3, 3, 1], "barres": [1] },
+        { "frets": [4, 3, 1, 1, 1, -1], "barres": [1] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 4, 3], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Bbminor",
+      "positions": [
+        { "frets": [-1, 1, 3, 3, 2, 1], "barres": [1] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 4, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Bbdim",
+      "positions": [
+        { "frets": [-1, 1, 2, 3, 2, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] },
+        { "frets": [-1, 3, 1, -1, 1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Bbdim7",
+      "positions": [
+        { "frets": [-1, 1, 2, 0, 2, 0], "barres": [] },
+        { "frets": [-1, -1, 2, 3, 2, 3], "barres": [] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Bbaug",
+      "positions": [
+        { "frets": [-1, 1, 4, 3, 3, -1], "barres": [] },
+        { "frets": [4, 3, 2, 1, 1, -1], "barres": [1] },
+        { "frets": [-1, -1, 3, 2, 2, 1], "barres": [] },
+        { "frets": [-1, -1, 2, 1, 1, -1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Bb7",
+      "positions": [
+        { "frets": [-1, 1, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 3], "barres": [1] },
+        { "frets": [-1, 3, 2, 3, 1, -1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Bbmaj7",
+      "positions": [
+        { "frets": [-1, 1, 3, 2, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 1, 1, 3], "barres": [1] },
+        { "frets": [1, 3, 2, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 3, 3], "barres": [1, 3] }
+      ]
+    },
+    {
+      "chord": "Bbm7",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [-1, 1, 3, 1, 2, 1], "barres": [1] },
+        { "frets": [-1, -1, 3, 3, 2, 4], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 2], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Bbm7b5",
+      "positions": [
+        { "frets": [-1, 1, 2, 1, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 2, 3, 2, 4], "barres": [2] },
+        { "frets": [2, -1, 2, 2, 1, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] }
+      ]
+    },
+    {
+      "chord": "Bmajor",
+      "positions": [
+        { "frets": [2, 2, 4, 4, 4, 2], "barres": [2] },
+        { "frets": [-1, -1, 1, 1, 1, 4], "barres": [1] },
+        { "frets": [1, 3, 3, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 4, 3], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Bminor",
+      "positions": [
+        { "frets": [2, 2, 4, 4, 3, 2], "barres": [2] },
+        { "frets": [1, 3, 3, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 3, 4, 2], "barres": [] },
+        { "frets": [-1, -1, 3, 2, 3, 1], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Bdim",
+      "positions": [
+        { "frets": [-1, 2, 0, -1, 0, 1], "barres": [] },
+        { "frets": [-1, 2, 3, 4, 3, -1], "barres": [] },
+        { "frets": [3, 1, -1, 3, 2, -1], "barres": [] },
+        { "frets": [-1, -1, 1, 2, -1, 2], "barres": [] }
+      ]
+    },
+    {
+      "chord": "Bdim7",
+      "positions": [
+        { "frets": [-1, 2, 3, 1, 3, 1], "barres": [1] },
+        { "frets": [-1, -1, 3, 4, 3, 4], "barres": [] },
+        { "frets": [2, -1, 1, 2, 1, -1], "barres": [] },
+        { "frets": [1, 2, 3, 1, 3, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Baug",
+      "positions": [
+        { "frets": [-1, 2, 1, 0, 0, -1], "barres": [] },
+        { "frets": [-1, -1, 3, 2, 2, 1], "barres": [] },
+        { "frets": [1, -1, 3, 2, 2, -1], "barres": [] },
+        { "frets": [-1, 3, 2, 1, 1, 0], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "B7",
+      "positions": [
+        { "frets": [-1, 2, 1, 2, 0, 2], "barres": [] },
+        { "frets": [2, 2, 4, 2, 4, 2], "barres": [2] },
+        { "frets": [-1, -1, 1, 1, 1, 2], "barres": [1] },
+        { "frets": [1, 3, 1, 2, 1, 1], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Bmaj7",
+      "positions": [
+        { "frets": [2, 2, 4, 3, 4, 2], "barres": [2] },
+        { "frets": [-1, -1, 1, 1, 1, 3], "barres": [1] },
+        { "frets": [1, 3, 2, 2, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 3, 3], "barres": [1, 3] }
+      ]
+    },
+    {
+      "chord": "Bm7",
+      "positions": [
+        { "frets": [1, -1, 1, 1, 1, -1], "barres": [] },
+        { "frets": [2, 2, 4, 2, 3, 2], "barres": [2] },
+        { "frets": [-1, -1, 2, 2, 1, 3], "barres": [] },
+        { "frets": [1, 3, 1, 1, 1, 1], "barres": [1] },
+        { "frets": [-1, 1, 1, 3, 2, 2], "barres": [1] }
+      ]
+    },
+    {
+      "chord": "Bm7b5",
+      "positions": [
+        { "frets": [-1, 2, 3, 2, 3, -1], "barres": [] },
+        { "frets": [2, -1, 2, 2, 1, -1], "barres": [] },
+        { "frets": [1, 2, 3, 1, 4, 1], "barres": [1] },
+        { "frets": [-1, -1, 1, 2, 2, 2], "barres": [2] }
+      ]
+    }
+  ]
+}
