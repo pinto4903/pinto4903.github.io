@@ -1,1 +1,12 @@
-<p>progressions works!</p>
+<div class="progression-container">
+  <label for="key">
+    Key:
+    <input id="key" type="text" [(ngModel)]="key" />
+    <button (click)="updateProgression()">Enter</button>
+  </label>
+  <br />
+  <div class="progression-text">
+    @for (chord of progression; track $index) {
+    <app-chord [chord]="chord" variation="1" [style.padding.px]="50"></app-chord>}
+  </div>
+</div>

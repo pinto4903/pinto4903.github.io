@@ -1,6 +1,7 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy } from '@angular/core';
 import * as Tone from 'tone';
 import { NoteService } from '../note.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-player',
@@ -9,7 +10,7 @@ import { NoteService } from '../note.service';
   templateUrl: './player.component.html',
   styleUrl: './player.component.css',
 })
-export class PlayerComponent {
+export class PlayerComponent implements OnDestroy {
   sampler = new Tone.Sampler({
     urls: {
       E2: 'low_e.mp3',
@@ -21,16 +22,23 @@ export class PlayerComponent {
     },
     baseUrl: 'assets/sounds/',
   }).toDestination();
-  isPlaying: boolean = false;
-  ctrlPressed: boolean = false;
+  isPlaying = false;
+  ctrlPressed = false;
+  noteSubscription: Subscription;
+  chordSubscription: Subscription;
 
   constructor(private noteService: NoteService) {
-    this.noteService.note$.subscribe((note) => {
+    this.noteSubscription = this.noteService.note$.subscribe((note) => {
       this.playNote(note);
     });
-    this.noteService.chord$.subscribe((chord) => {
+    this.chordSubscription = this.noteService.chord$.subscribe((chord) => {
       this.playChord(chord);
     });
+  }
+
+  ngOnDestroy(): void {
+    this.noteSubscription.unsubscribe();
+    this.chordSubscription.unsubscribe();
   }
 
   @HostListener('window:keydown.control', ['$event'])
@@ -41,7 +49,6 @@ export class PlayerComponent {
 
   @HostListener('window:keyup.control', ['$event'])
   handleCtrlUp(event: KeyboardEvent) {
-    this.isPlaying = !this.isPlaying;
     this.ctrlPressed = false;
   }
 
@@ -51,7 +58,7 @@ export class PlayerComponent {
 
   playChord(e: string[]) {
     if (this.isPlaying)
-      for (let i in e) {
+      for (const i in e) {
         this.sampler.triggerAttackRelease(e[i], '2n');
       }
   }

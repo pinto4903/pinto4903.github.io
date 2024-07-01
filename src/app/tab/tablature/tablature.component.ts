@@ -1,5 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy } from '@angular/core';
 import { FretService, GuitarFret } from '../fret.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-tablature',
@@ -8,15 +9,17 @@ import { FretService, GuitarFret } from '../fret.service';
   templateUrl: './tablature.component.html',
   styleUrl: './tablature.component.css',
 })
-export class TablatureComponent {
+export class TablatureComponent implements OnDestroy {
   view: string[] = ['-', '-', '-', '-', '-', '-'];
   model: tabColumn[] = [];
+  noteSubscription: Subscription;
+  chordSubscription: Subscription;
 
   constructor(private fretService: FretService) {
-    this.fretService.note$.subscribe((note) => {
+    this.noteSubscription = this.fretService.note$.subscribe((note) => {
       this.addNote(note);
     });
-    this.fretService.chord$.subscribe((chord) => {
+    this.chordSubscription = this.fretService.chord$.subscribe((chord) => {
       this.addChord(chord);
     });
   }
@@ -31,17 +34,22 @@ export class TablatureComponent {
     alert('abc'); // TODO
   }
 
+  ngOnDestroy(): void {
+    this.noteSubscription.unsubscribe();
+    this.chordSubscription.unsubscribe();
+  }
+
   addNote(note: GuitarFret) {
     this.addChord([note]);
   }
 
   addChord(chord: GuitarFret[]) {
     // TODO handle line wrapping
-    let strings = [0, 1, 2, 3, 4, 5];
-    let ddFret = chord.some((e) => e.fret >= 10);
-    for (let i in chord) {
-      let str = chord[i].str;
-      let fret = chord[i].fret;
+    const strings = [0, 1, 2, 3, 4, 5];
+    const ddFret = chord.some((e) => e.fret >= 10);
+    for (const i in chord) {
+      const str = chord[i].str;
+      const fret = chord[i].fret;
       if (ddFret) {
         this.view[str - 1] += (fret < 10 ? '-' : '') + fret + '-';
       } else {
@@ -49,7 +57,7 @@ export class TablatureComponent {
       }
       strings.splice(strings.indexOf(str - 1), 1);
     }
-    for (let i in strings) {
+    for (const i in strings) {
       this.view[strings[i]] += ddFret ? '---' : '--';
     }
     this.model.push({ pause: false, notes: chord });

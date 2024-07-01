@@ -11,7 +11,7 @@ import { FretService, GuitarFret } from '../fret.service';
 })
 export class FretboardComponent {
   @Output() fretClickEvent = new EventEmitter<[number, number]>();
-  shiftPressed: boolean = false;
+  shiftPressed = false;
   selectedElements: HTMLElement[] = [];
 
   constructor(private noteService: NoteService, private fretService: FretService) {}
@@ -24,16 +24,16 @@ export class FretboardComponent {
   @HostListener('window:keyup.shift', ['$event'])
   handleShiftUp(event: KeyboardEvent) {
     this.shiftPressed = false;
-    for (let i in this.selectedElements) {
+    for (const i in this.selectedElements) {
       this.selectedElements[i].style.fill = '';
     }
-    let notes: string[] = this.selectedElements.map((elem) => {
-      let numbers = FretboardComponent.idToFret(elem.id);
+    const notes: string[] = this.selectedElements.map((elem) => {
+      const numbers = FretboardComponent.idToFret(elem.id);
       return FretboardComponent.fretToNote(numbers[0], numbers[1]);
     });
     this.noteService.setChord(notes);
-    let frets: GuitarFret[] = this.selectedElements.map((elem) => {
-      let numbers = FretboardComponent.idToFret(elem.id);
+    const frets: GuitarFret[] = this.selectedElements.map((elem) => {
+      const numbers = FretboardComponent.idToFret(elem.id);
       return { str: numbers[0], fret: numbers[1] };
     });
     this.fretService.setChord(frets);
@@ -46,13 +46,13 @@ export class FretboardComponent {
     if (this.shiftPressed) {
       const htmele = e.target as HTMLElement;
       if (this.selectedElements.includes(htmele)) {
-        let i = this.selectedElements.indexOf(htmele);
+        const i = this.selectedElements.indexOf(htmele);
         this.selectedElements.splice(i, 1);
         htmele.style.fill = '';
       } else {
         const id = htmele.id;
-        let str: number = FretboardComponent.idToFret(id)[0];
-        let i = this.selectedElements.findIndex(
+        const str: number = FretboardComponent.idToFret(id)[0];
+        const i = this.selectedElements.findIndex(
           (elem) => FretboardComponent.idToFret(elem.id)[0] == str
         );
         if (i > -1) {
@@ -65,15 +65,15 @@ export class FretboardComponent {
     } else {
       const targetElement = e.target as Element;
       const id = targetElement.id;
-      let numbers: number[] = FretboardComponent.idToFret(id);
+      const numbers: number[] = FretboardComponent.idToFret(id);
       this.noteService.setNote(FretboardComponent.fretToNote(numbers[0], numbers[1]));
       this.fretService.setNote({ str: numbers[0], fret: numbers[1] });
     }
   }
 
   static idToFret(id: string) {
-    let regex: RegExp = /\d+/g;
-    let matches: string[] = id.match(regex)!;
+    const regex = /\d+/g;
+    const matches: string[] = id.match(regex)!;
     return matches.map((match) => parseInt(match, 10));
   }
 

@@ -1,0 +1,59 @@
+div.chord-container {
+    display: block;
+    height : 180px;
+    width : 150px;
+}
+
+div.chord-name {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+text.base-fret {
+    text-anchor: end;
+    fill: black;
+}
+
+svg.chord{
+    height : 100%;
+    width : 100%;
+}
+
+rect.fretboard {
+    x: 20%;
+    y :20%;
+    height: 80%;
+    width:  70%;
+    fill: transparent;
+    outline: 2px solid black;
+}
+
+line.str {
+    stroke-width: 1px;
+    stroke: dimgray;
+}
+
+circle.finger {
+    r: 5%;
+    fill: var(--c2);
+}
+
+line.cross {
+    stroke-width: 2px;
+    stroke: dimgray;
+}
+
+circle.open {
+    r: 3%;
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: var(--c2);
+}
+
+rect.barre {
+    ry: 5%;
+    rx: 5%;
+    height: 10%;
+    fill: var(--c2);
+}
