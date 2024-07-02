@@ -1,0 +1,9 @@
+<div class="dot-selector">
+  <button class="arrow left-arrow" (click)="moveLeft()">&lt;</button>
+  <div class="dots">
+    @for (dot of dots; track $index) {
+    <span class="dot" [class.active]="dot === currentActive"> </span>
+    }
+  </div>
+  <button class="arrow right-arrow" (click)="moveRight()">&gt;</button>
+</div>

@@ -1,1 +1,7 @@
-<p>chord-selector works!</p>
+<div class="chord-selector-container">
+  <app-dot-selector
+    [dotCount]="numberVariations"
+    (dotChanged)="onSelectChange($event)"
+  ></app-dot-selector>
+  <app-chord [chord]="chord" [variation]="currentVariation"></app-chord>
+</div>

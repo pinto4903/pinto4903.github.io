@@ -1,36 +1,41 @@
 <div class="chord-container">
-  <svg class="chord">
-    <rect class="fretboard" />
-    <text class="base-fret" x="15%" y="33%">{{ baseFret }}</text>
-    <line class="str" x1="34.0%" x2="34.0%" y1="20%" y2="100%" />
-    <line class="str" x1="48.0%" x2="48.0%" y1="20%" y2="100%" />
-    <line class="str" x1="62.0%" x2="62.0%" y1="20%" y2="100%" />
-    <line class="str" x1="76.0%" x2="76.0%" y1="20%" y2="100%" />
-    <line class="str" x1="20%" x2="90%" y1="40.0%" y2="40.0%" />
-    <line class="str" x1="20%" x2="90%" y1="60.0%" y2="60.0%" />
-    <line class="str" x1="20%" x2="90%" y1="80.0%" y2="80.0%" />
-    @for (element of svgElements; track $index) { @if (element.class === "finger") {
-    <circle class="finger" [attr.cx]="element.x1" [attr.cy]="element.y1" />
-    } @else if (element.class === "open") {
-    <circle class="open" [attr.cx]="element.x1" [attr.cy]="element.y1" />
-    } @else if (element.class === "cross") {
-    <line
-      class="cross"
-      [attr.x1]="element.x1"
-      [attr.y1]="element.y1"
-      [attr.x2]="element.x2"
-      [attr.y2]="element.y2"
-    />
-    <line
-      class="cross"
-      [attr.x1]="element.x2"
-      [attr.y1]="element.y1"
-      [attr.x2]="element.x1"
-      [attr.y2]="element.y2"
-    />
-    } @else if (element.class === "barre") {
-    <rect class="barre" [attr.x]="element.x1" [attr.y]="element.y1" [attr.width]="element.x2" />
-    } }
-  </svg>
+  <div class="svg-container">
+    <svg class="chord">
+      <g class="chord-diagram">
+        <rect class="fretboard" />
+        <text class="base-fret-text" x="10%" y="33%">{{ baseFret }}</text>
+        <line class="str" x1="29.0%" x2="29.0%" y1="20%" y2="100%" />
+        <line class="str" x1="43.0%" x2="43.0%" y1="20%" y2="100%" />
+        <line class="str" x1="57.0%" x2="57.0%" y1="20%" y2="100%" />
+        <line class="str" x1="71.0%" x2="71.0%" y1="20%" y2="100%" />
+        <line class="str" x1="15%" x2="85%" y1="40.0%" y2="40.0%" />
+        <line class="str" x1="15%" x2="85%" y1="60.0%" y2="60.0%" />
+        <line class="str" x1="15%" x2="85%" y1="80.0%" y2="80.0%" />
+        @for (element of svgElements; track $index) { @if (element.class === "finger") {
+        <circle class="finger" [attr.cx]="element.x1" [attr.cy]="element.y1" />
+        } @else if (element.class === "open") {
+        <circle class="open" [attr.cx]="element.x1" [attr.cy]="element.y1" />
+        } @else if (element.class === "cross") {
+        <line
+          class="cross"
+          [attr.x1]="element.x1"
+          [attr.y1]="element.y1"
+          [attr.x2]="element.x2"
+          [attr.y2]="element.y2"
+        />
+        <line
+          class="cross"
+          [attr.x1]="element.x2"
+          [attr.y1]="element.y1"
+          [attr.x2]="element.x1"
+          [attr.y2]="element.y2"
+        />
+        } @else if (element.class === "barre") {
+        <rect class="barre" [attr.x]="element.x1" [attr.y]="element.y1" [attr.width]="element.x2" />
+        } }
+        <rect class="base-fret" x1="14.0%" x2="86.0%" y1="20.0%" y2="20.0%" />
+      </g>
+    </svg>
+  </div>
   <div class="chord-name" [innerHtml]="chord"></div>
 </div>

@@ -1,18 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProgressionService } from './progression.service';
 import { FormsModule } from '@angular/forms';
-import { ChordComponent } from './chord/chord.component';
+import { ChordSelectorComponent } from './chord-selector/chord-selector.component';
 
 @Component({
   selector: 'app-progressions',
   standalone: true,
   templateUrl: './progressions.component.html',
   styleUrl: './progressions.component.css',
-  imports: [FormsModule, ChordComponent],
+  imports: [FormsModule, ChordSelectorComponent],
 })
 export class ProgressionsComponent {
   progression: string[] = [];
-  key = '';
+  key = 'C';
 
   constructor(private progressionService: ProgressionService) {}
 

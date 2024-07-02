@@ -19,7 +19,7 @@ export class ChordFetcherService {
 
   // TODO available chords: ["C","C#","D","Eb","E","F","F#","G","Ab","A","Bb","B"], swap fingering for A#, G# and D#, we have fingerings just w/ a different name
   getChord(chord: string, variation: number): Fingering {
-    if (this.chords.has(chord)) return this.chords.get(chord)![variation - 1];
+    if (this.chords.has(chord)) return this.chords.get(chord)![variation];
     else {
       alert('Chord not found!');
       return { frets: [-1, -1, -1, -1, -1, -1], barres: [], base: 0 };

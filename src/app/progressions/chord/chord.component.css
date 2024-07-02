@@ -1,4 +1,13 @@
 div.chord-container {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+div.svg-container {
     display: block;
     height : 180px;
     width : 150px;
@@ -10,7 +19,7 @@ div.chord-name {
     font-weight: bold;
 }
 
-text.base-fret {
+text.base-fret-text {
     text-anchor: end;
     fill: black;
 }
@@ -21,12 +30,24 @@ svg.chord{
 }
 
 rect.fretboard {
-    x: 20%;
+    x: 15%;
     y :20%;
-    height: 80%;
+    height: 100%;
     width:  70%;
     fill: transparent;
-    outline: 2px solid black;
+    stroke-width: 2px;
+    stroke:  black;
+}
+
+rect.base-fret {
+    x: 15%;
+    y :20%;
+    height: 2%;
+    width:  70%;
+    stroke-width: 3px;
+    fill: dimgray;
+    stroke:  dimgray;
+    transform: translateY(-3px);
 }
 
 line.str {

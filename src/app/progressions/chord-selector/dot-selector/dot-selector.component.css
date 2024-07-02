@@ -1,0 +1,39 @@
+.dot-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+  }
+  
+  .dots {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: var(--c2);
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .arrow:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .arrow:active {
+    background-color: #e0e0e0;
+  }
