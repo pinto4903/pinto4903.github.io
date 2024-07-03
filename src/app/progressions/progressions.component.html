@@ -5,8 +5,8 @@
     <button (click)="updateProgression()">Enter</button>
   </label>
   <br />
-  <div class="progression-text">
+  <div class="progression">
     @for (chord of progression; track $index) {
-    <app-chord-selector [chord]="chord" [style.padding.px]="50"></app-chord-selector>}
+    <app-chord-selector [chord]="chord"></app-chord-selector>}
   </div>
 </div>

@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1px;
+    gap: 10px;
   }
   
   .dots {
     display: flex;
     gap: 10px;
+    align-items: center; 
   }
   
   .dot {
@@ -16,6 +17,7 @@
     border-radius: 50%;
     background-color: #ccc;
     transition: background-color 0.3s ease;
+    display: inline-block; 
   }
   
   .dot.active {
@@ -27,7 +29,15 @@
     border: none;
     font-size: 20px;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 0; 
+    width: 30px;
+    height: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding-bottom: 4px; 
+    border-radius: 15px;
   }
   
   .arrow:hover {

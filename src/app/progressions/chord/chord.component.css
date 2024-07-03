@@ -4,7 +4,6 @@ div.chord-container {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
 }
 
 div.svg-container {

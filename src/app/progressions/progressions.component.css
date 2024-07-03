@@ -9,6 +9,9 @@ div.progression-container {
     align-items: center;
 }
 
-div.progression-text {
-
+div.progression {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

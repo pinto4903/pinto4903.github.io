@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, Input, OnInit, OnChanges } from '@angular/core';
 import { DotSelectorComponent } from './dot-selector/dot-selector.component';
 import { ChordFetcherService } from '../chord/chord-fetcher.service';
 import { ChordComponent } from '../chord/chord.component';
@@ -21,7 +21,7 @@ export class ChordSelectorComponent implements OnInit, OnChanges {
     this.numberVariations = this.chordFetcherService.getNumberOfVariations(this.chord);
   }
 
-  ngOnChanges(changes: SimpleChanges) {
+  ngOnChanges() {
     this.numberVariations = this.chordFetcherService.getNumberOfVariations(this.chord);
   }
 

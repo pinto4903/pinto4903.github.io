@@ -11,12 +11,19 @@ import { ChordSelectorComponent } from './chord-selector/chord-selector.componen
   imports: [FormsModule, ChordSelectorComponent],
 })
 export class ProgressionsComponent {
+  // TODO this whole component sucks lol, if key doesnt exist the site dies
   progression: string[] = [];
   key = 'C';
 
   constructor(private progressionService: ProgressionService) {}
 
   updateProgression() {
-    this.progression = this.progressionService.getMajorProgression(this.key);
+    if (this.progressionService.keyExists(this.key)) {
+      if (this.key.charAt(0) == this.key.charAt(0).toUpperCase())
+        this.progression = this.progressionService.getMajorProgression(this.key);
+      else this.progression = this.progressionService.getMinorProgression(this.key);
+    } else {
+      alert('Unknown or theoretical key. Possible values: ' + this.progressionService.validKeys());
+    }
   }
 }
