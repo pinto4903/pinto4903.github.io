@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, OnChanges } from '@angular/core';
 import { ChordFetcherService, Fingering } from './chord-fetcher.service';
 
 interface svgElement {
@@ -30,7 +30,7 @@ export class ChordComponent implements OnInit, OnChanges {
     this.genSvg();
   }
 
-  ngOnChanges(changes: SimpleChanges) {
+  ngOnChanges() {
     this.svgElements = [];
     this.baseFret = '';
     this.genSvg();

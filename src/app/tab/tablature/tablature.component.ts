@@ -10,10 +10,11 @@ import { Subscription } from 'rxjs';
   styleUrl: './tablature.component.css',
 })
 export class TablatureComponent implements OnDestroy {
-  view: string[] = ['-', '-', '-', '-', '-', '-'];
+  view: string[][] = [[''], [''], [''], [''], [''], ['']];
   model: tabColumn[] = [];
   noteSubscription: Subscription;
   chordSubscription: Subscription;
+  maxWidth = 150;
 
   constructor(private fretService: FretService) {
     this.noteSubscription = this.fretService.note$.subscribe((note) => {
@@ -44,23 +45,36 @@ export class TablatureComponent implements OnDestroy {
   }
 
   addChord(chord: GuitarFret[]) {
-    // TODO handle line wrapping
     const strings = [0, 1, 2, 3, 4, 5];
     const ddFret = chord.some((e) => e.fret >= 10);
+    const newColumn = ddFret ? '---' : '--';
+
+    if (this.view[0][this.view[0].length - 1].length + newColumn.length > this.maxWidth) {
+      for (let i = 0; i < 6; i++) {
+        this.view[i].push('');
+      }
+    }
+
     for (const i in chord) {
       const str = chord[i].str;
       const fret = chord[i].fret;
       if (ddFret) {
-        this.view[str - 1] += (fret < 10 ? '-' : '') + fret + '-';
+        this.view[str - 1][this.view[str - 1].length - 1] += (fret < 10 ? '-' : '') + fret + '-';
       } else {
-        this.view[str - 1] += fret + '-';
+        this.view[str - 1][this.view[str - 1].length - 1] += fret + '-';
       }
       strings.splice(strings.indexOf(str - 1), 1);
     }
+
     for (const i in strings) {
-      this.view[strings[i]] += ddFret ? '---' : '--';
+      this.view[strings[i]][this.view[strings[i]].length - 1] += newColumn;
     }
+
     this.model.push({ pause: false, notes: chord });
+  }
+
+  renderView(): string[][] {
+    return this.view.map((line) => line.map((paragraph) => paragraph.padEnd(this.maxWidth, '-')));
   }
 }
 

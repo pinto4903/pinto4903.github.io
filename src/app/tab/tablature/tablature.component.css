@@ -1,3 +1,7 @@
-div.tablature-container{
-    font-family: 'Courier New', Courier, monospace;
+div.tablature-container {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.tablature-paragraph {
+  margin-bottom: 20px;
 }

@@ -1,8 +1,12 @@
 <div class="tablature-container">
-  <span>e |</span><span id="s1tab" [innerHtml]="view[0]"></span><br />
-  <span>B |</span><span id="s2tab" [innerHtml]="view[1]"></span><br />
-  <span>G |</span><span id="s3tab" [innerHtml]="view[2]"></span><br />
-  <span>D |</span><span id="s4tab" [innerHtml]="view[3]"></span><br />
-  <span>A |</span><span id="s5tab" [innerHtml]="view[4]"></span><br />
-  <span>E |</span><span id="s6tab" [innerHtml]="view[5]"></span><br />
+  @for (paragraph of renderView()[0]; track $index) {
+  <div class="tablature-paragraph">
+    <span>e |</span><span [innerHtml]="renderView()[0][$index]"></span><br />
+    <span>B |</span><span [innerHtml]="renderView()[1][$index]"></span><br />
+    <span>G |</span><span [innerHtml]="renderView()[2][$index]"></span><br />
+    <span>D |</span><span [innerHtml]="renderView()[3][$index]"></span><br />
+    <span>A |</span><span [innerHtml]="renderView()[4][$index]"></span><br />
+    <span>E |</span><span [innerHtml]="renderView()[5][$index]"></span><br />
+  </div>
+  }
 </div>

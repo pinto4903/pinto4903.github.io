@@ -1,0 +1,13 @@
+<div class="full-selector-container">
+  7th:
+  <label class="switch">
+    <input type="checkbox" (change)="seventh()" [checked]="seventhChecked" />
+    <span class="slider round"></span>
+  </label>
+  @if (this.displayAlternate) { alt:
+  <label class="switch">
+    <input type="checkbox" (change)="alternate()" [checked]="alternateChecked" />
+    <span class="slider round"></span> </label
+  >}
+  <app-chord-selector [chord]="currChord"></app-chord-selector>
+</div>

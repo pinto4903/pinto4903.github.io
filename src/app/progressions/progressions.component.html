@@ -7,6 +7,33 @@
   <br />
   <div class="progression">
     @for (chord of progression; track $index) {
-    <app-chord-selector [chord]="chord"></app-chord-selector>}
+    <app-full-selector
+      [chord]="chord"
+      [displayAlternate]="!major"
+      [degree]="$index"
+    ></app-full-selector
+    >}
   </div>
+  <body>
+    Major progressions:
+    <ol>
+      <li>I -> All</li>
+      <li>ii -> I | V | viiº</li>
+      <li>iii -> I | IV | vi</li>
+      <li>IV -> I | ii | V | viiº</li>
+      <li>V -> I | vi</li>
+      <li>vi -> I | ii | iii | IV | V</li>
+      <li>viiº -> I</li>
+    </ol>
+    Minor progressions:
+    <ol>
+      <li>i -> All</li>
+      <li>iiº -> i | V | viiº</li>
+      <li>III -> i | iv | VI | viiº</li>
+      <li>iv -> I | V | viiº</li>
+      <li>V -> I | VI</li>
+      <li>VI -> I | III | iv | V | viiº</li>
+      <li>viiº -> i</li>
+    </ol>
+  </body>
 </div>
