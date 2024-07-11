@@ -43,7 +43,7 @@ export class ProgressionService {
   static minorSuffixes: string[] = ['minor', 'dim', 'major', 'minor', 'major', 'major', 'dim'];
   static minorAltSuffixes: string[] = ['minor', 'minor', 'aug', 'major', 'minor', 'dim', 'major'];
   static minor7thSuffixes: string[] = ['m7', 'dim7', 'm7b5', 'm7', '7', 'maj7', 'dim7'];
-  static minorAlt7thSuffixes: string[] = ['m7', 'dim7', 'm7b5', 'm7', '7', 'maj7', 'dim7']; // TODO
+  static minorAlt7thSuffixes: string[] = ['m7', 'm7', 'aug7', 'maj7', 'm7', 'dim7', '7']; // dim7 could be m7b5
   static majorSteps: number[] = [2, 2, 1, 2, 2, 2, 1];
   static minorSteps: number[] = [2, 1, 2, 2, 1, 3, 2];
   allowedSuffixes = ['major', 'minor', 'dim', 'aug', '7', 'maj7', 'm7', 'dim7', 'm7b5'];
@@ -98,6 +98,37 @@ export class ProgressionService {
         }
       default:
         return tone + ProgressionService.minorAltSuffixes[degree];
+    }
+  }
+
+  getAlt7th(chord: string, degree: number): string {
+    let tone: string;
+    if (chord.charAt(1) == 'b' || chord.charAt(1) == '#') {
+      tone = chord.slice(0, 2);
+    } else {
+      tone = chord.slice(0, 1);
+    }
+    switch (degree) {
+      case 5:
+        let idx;
+        if (this.isFlat(tone)) {
+          idx = ProgressionService.flatTones.indexOf(tone);
+          return ProgressionService.flatTones[(idx + 1) % 12] + 'm7b5';
+        } else {
+          idx = ProgressionService.sharpTones.indexOf(tone);
+          return ProgressionService.sharpTones[(idx + 1) % 12] + 'm7b5';
+        }
+      case 6:
+        let id;
+        if (this.isFlat(tone)) {
+          id = ProgressionService.flatTones.indexOf(tone);
+          return ProgressionService.flatTones[(id - 1) % 12] + '7';
+        } else {
+          id = ProgressionService.sharpTones.indexOf(tone);
+          return ProgressionService.sharpTones[(id - 1) % 12] + '7';
+        }
+      default:
+        return tone + ProgressionService.minorAlt7thSuffixes[degree];
     }
   }
 

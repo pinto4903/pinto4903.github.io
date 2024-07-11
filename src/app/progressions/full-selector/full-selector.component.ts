@@ -31,27 +31,29 @@ export class FullSelectorComponent implements OnInit, OnChanges {
     this.alternateChecked = false;
   }
 
-  seventh() {
-    if (!this.seventhChecked) {
+  updateChord() {
+    if (this.seventhChecked && this.alternateChecked) {
+      this.currChord = this.progressionService.getAlt7th(this.chord, this.degree);
+    } else if (this.seventhChecked) {
       this.currChord = this.progressionService.getSeventh(
         this.chord,
         this.degree,
         this.displayAlternate
       );
-      this.seventhChecked = true;
+    } else if (this.alternateChecked) {
+      this.currChord = this.progressionService.getAlt(this.chord, this.degree);
     } else {
       this.currChord = this.chord;
-      this.seventhChecked = false;
     }
   }
 
+  seventh() {
+    this.seventhChecked = !this.seventhChecked;
+    this.updateChord();
+  }
+
   alternate() {
-    if (!this.alternateChecked) {
-      this.currChord = this.progressionService.getAlt(this.chord, this.degree);
-      this.alternateChecked = true;
-    } else {
-      this.currChord = this.chord;
-      this.alternateChecked = false;
-    }
+    this.alternateChecked = !this.alternateChecked;
+    this.updateChord();
   }
 }

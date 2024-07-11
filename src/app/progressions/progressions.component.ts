@@ -11,7 +11,6 @@ import { FullSelectorComponent } from './full-selector/full-selector.component';
   imports: [FormsModule, FullSelectorComponent],
 })
 export class ProgressionsComponent {
-  // TODO this whole component sucks lol, if key doesnt exist the site dies
   progression: string[] = [];
   key = 'C';
   major = true;
